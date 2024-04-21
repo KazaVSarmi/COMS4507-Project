@@ -1,0 +1,66 @@
+CRITICAL - 2023-05-20 03:05:26 --> Undefined variable $users_list
+in APPPATH/Views/comments.php on line 34.
+ 1 APPPATH/Views/comments.php(34): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/comments.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Comments.php(35): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comments->add_comment()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 04:49:23 --> Undefined variable $comment
+in APPPATH/Views/comments.php on line 36.
+ 1 APPPATH/Views/comments.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/comments.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Comments.php(114): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comments->view_comments_with_post_heading()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 04:52:22 --> form_input(): Argument #2 ($value) must be of type string, stdClass given, called in /var/www/htdocs/queryS/system/Helpers/form_helper.php on line 123
+in SYSTEMPATH/Helpers/form_helper.php on line 143.
+ 1 SYSTEMPATH/Helpers/form_helper.php(123): form_input()
+ 2 SYSTEMPATH/Helpers/form_helper.php(127): form_hidden()
+ 3 SYSTEMPATH/Helpers/form_helper.php(67): form_hidden()
+ 4 APPPATH/Views/comments.php(42): form_open()
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/comments.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 8 APPPATH/Controllers/Comments.php(114): view()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comments->view_comments_with_post_heading()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 04:53:07 --> form_input(): Argument #2 ($value) must be of type string, stdClass given, called in /var/www/htdocs/queryS/system/Helpers/form_helper.php on line 123
+in SYSTEMPATH/Helpers/form_helper.php on line 143.
+ 1 SYSTEMPATH/Helpers/form_helper.php(123): form_input()
+ 2 SYSTEMPATH/Helpers/form_helper.php(127): form_hidden()
+ 3 SYSTEMPATH/Helpers/form_helper.php(67): form_hidden()
+ 4 APPPATH/Views/comments.php(37): form_open()
+ 5 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/comments.php')
+ 6 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 8 APPPATH/Controllers/Comments.php(114): view()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comments->view_comments_with_post_heading()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 05:02:23 --> The route for "comments" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+ 2 SYSTEMPATH/Common.php(880): CodeIgniter\HTTP\RedirectResponse->route()
+ 3 APPPATH/Controllers/Comments.php(161): redirect()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comments->like_comment()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 05:32:34 --> Undefined variable $user_id
+in APPPATH/Controllers/Comments.php on line 73.
+ 1 APPPATH/Controllers/Comments.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comments->view_comments()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
