@@ -1,0 +1,139 @@
+CRITICAL - 2023-05-19 11:09:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 882.
+ 1 SYSTEMPATH/Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Comments.php(31): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Comments->view_comments()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-19 12:59:31 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 882.
+ 1 SYSTEMPATH/Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/User_home.php(43): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-19 13:00:47 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 882.
+ 1 SYSTEMPATH/Model.php(642): CodeIgniter\Database\BaseConnection->table()
+ 2 SYSTEMPATH/Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/User_home.php(43): CodeIgniter\Model->__call()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-19 13:06:47 --> mysqli_sql_exception: Unknown column 'names' in 'where clause' in /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/queryS/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/queryS/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/queryS/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/queryS/app/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/queryS/app/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+#6 /var/www/htdocs/queryS/system/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+#7 /var/www/htdocs/queryS/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/queryS/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/queryS/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-19 13:06:47 --> Unknown column 'names' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-19 13:07:03 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH/Models/Topics.php on line 45.
+ 1 APPPATH/Models/Topics.php(45): array_push()
+ 2 APPPATH/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-19 13:07:24 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH/Models/Topics.php on line 45.
+ 1 APPPATH/Models/Topics.php(45): array_push()
+ 2 APPPATH/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-19 13:11:37 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH/Models/Topics.php on line 45.
+ 1 APPPATH/Models/Topics.php(45): array_push()
+ 2 APPPATH/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-19 13:15:59 --> mysqli_sql_exception: Table 'queryx.Posts' doesn't exist in /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/queryS/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/queryS/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/queryS/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/queryS/app/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/queryS/app/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+#6 /var/www/htdocs/queryS/system/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+#7 /var/www/htdocs/queryS/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/queryS/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/queryS/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-19 13:15:59 --> Table 'queryx.Posts' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-19 13:16:23 --> mysqli_sql_exception: Table 'queryx.Posts' doesn't exist in /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/queryS/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/queryS/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/queryS/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/queryS/app/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/queryS/app/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+#6 /var/www/htdocs/queryS/system/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+#7 /var/www/htdocs/queryS/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/queryS/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/queryS/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-19 13:16:23 --> Table 'queryx.Posts' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-19 13:16:29 --> mysqli_sql_exception: Table 'queryx.Posts' doesn't exist in /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /var/www/htdocs/queryS/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /var/www/htdocs/queryS/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/htdocs/queryS/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/htdocs/queryS/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/htdocs/queryS/app/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/htdocs/queryS/app/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+#6 /var/www/htdocs/queryS/system/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+#7 /var/www/htdocs/queryS/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/htdocs/queryS/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/htdocs/queryS/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-19 13:16:29 --> Table 'queryx.Posts' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 2 APPPATH/Models/Topics.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH/Controllers/User_home.php(43): App\Models\Topics_model->get_names_similar_to()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\User_home->ajax()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
